@@ -4,7 +4,7 @@ import { Typography } from "@mui/material";
 
 export default function Home() {
   return (
-    // TO DO: Build actual page.
+    // TODO: Build actual page.
     <Typography
       fontFamily={"Poppins"}
       variant="h1"
