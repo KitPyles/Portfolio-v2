@@ -1,6 +1,14 @@
-const { Container } = require("@mui/material");
+const { Container, Typography } = require("@mui/material");
 
+// TODO: Plan & build Goals component.
+// TODO: Learn Python.
+// TODO: Completing Headstarter Fellowship
+// TODO: Working in tech.
 
-<Container>
-    {/* TODO: Plan & build Education component. */}
-</Container>
+export default function Goals() {
+  return (
+    <Container>
+      <Typography>GOALS COMPONENT</Typography>
+    </Container>
+  );
+}
