@@ -70,7 +70,7 @@ function ResponsiveAppBar(props) {
             border: "2px solid white",
             borderRadius: "30px",
             background:
-              "linear-gradient( 90deg, rgba(78, 78, 246, 0.647) 0%, rgba(247, 90, 216, 0.696) 100% );",
+              "linear-gradient( 90deg, rgba(78, 78, 246, 0.647) 0%, rgba(247, 90, 216, 0.696) 100% )",
           }}
         >
           <Container maxWidth="xl">
@@ -87,39 +87,6 @@ function ResponsiveAppBar(props) {
                   <MenuIcon />
                 </IconButton>
               </Box>
-
-              <Typography
-                variant="h5"
-                noWrap
-                component="a"
-                href=""
-                sx={{
-                  mr: 2,
-                  display: { xs: "flex", md: "none" },
-                  flexGrow: 1,
-                  fontFamily: "monospace",
-                  fontWeight: 700,
-                  letterSpacing: ".3rem",
-                  color: "inherit",
-                  textDecoration: "none",
-                }}
-              >
-                {" "}
-                <Avatar
-                  // alt="logo"
-                  // src="https://res.cloudinary.com/dtvtphhsc/image/upload/fl_immutable_cache.preserve_transparency.progressive.sprite/v1693672396/logo_1_lk0neo.webp"
-                  sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
-                >
-                  <Image
-                    src={logo}
-                    style={{ width: "100%", height: "auto" }}
-                    alt="logo"
-                    width={100}
-                    height={100}
-                    loading="lazy"
-                  />
-                </Avatar>
-              </Typography>
               <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
                 {isMatch ? (
                   <IconButton
@@ -255,7 +222,7 @@ function ResponsiveAppBar(props) {
                   <IconButton sx={{ p: 0 }}>
                     <Avatar className="Tab7 animate__animated animate__backInRight">
                       <Image
-                        src={"portfolio/public/Kit-Pyles-avatar.jpg"}
+                        src={"/Kit-Pyles-avatar.jpg"}
                         style={{ width: "100%", height: "auto" }}
                         alt="sufi"
                         width={100}

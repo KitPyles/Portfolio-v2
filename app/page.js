@@ -1,5 +1,5 @@
 // import Image from "next/image";
-"use client"
+"use client";
 import {
   Container,
   createTheme,
@@ -23,74 +23,72 @@ import ResponsiveAppBar from "./components/menu";
 // TODO: Contact comp
 
 export default function Home() {
-  const light = createTheme({
-    typography: {
-      fontFamily: "Poppins, sans-serif",
-    },
-    palette: {
-      primary: {
-        main: "#774c60",
-      },
-      secondary: {
-        main: "#086375",
-      },
-      text: {
-        primary: "#4a5240",
-      },
-      background: {
-        default: "#D5D3DA",
-      },
-    },
-  });
+  // const light = createTheme({
+  //   typography: {
+  //     fontFamily: "Poppins, sans-serif",
+  //   },
+  //   palette: {
+  //     primary: {
+  //       main: "#774c60",
+  //     },
+  //     secondary: {
+  //       main: "#086375",
+  //     },
+  //     text: {
+  //       primary: "#4a5240",
+  //     },
+  //     background: {
+  //       default: "#D5D3DA",
+  //     },
+  //   },
+  // });
 
-  const dark = createTheme({
-    typography: {
-      fontFamily: "Poppins, sans-serif",
-    },
-    palette: {
-      primary: {
-        main: "#774c60",
-      },
-      secondary: {
-        main: "#086375",
-      },
-      background: {
-        default: "#4a5240",
-      },
-      text: {
-        primary: "#D5D3DA",
-      },
-    },
-  });
+  // const dark = createTheme({
+  //   typography: {
+  //     fontFamily: "Poppins, sans-serif",
+  //   },
+  //   palette: {
+  //     primary: {
+  //       main: "#774c60",
+  //     },
+  //     secondary: {
+  //       main: "#086375",
+  //     },
+  //     background: {
+  //       default: "#4a5240",
+  //     },
+  //     text: {
+  //       primary: "#D5D3DA",
+  //     },
+  //   },
+  // });
 
-  let theme = "light";
+  // let theme = "light";
 
-  const changeTheme = (e) => {
-    if (theme === "light") {
-      theme = "dark";
-    } else if (theme === "dark") {
-      theme = "light";
-    }
-    return theme;
-  };
+  // const changeTheme = (e) => {
+  //   if (theme === "light") {
+  //     theme = "dark";
+  //   } else if (theme === "dark") {
+  //     theme = "light";
+  //   }
+  //   return theme;
+  // };
 
   return (
-    <ThemeProvider theme = {theme}>
-      <Container>
-        <ResponsiveAppBar />
-        <Typography fontFamily={"Poppins"} variant="h1" textAlign={"center"}>
-          Coming Soon!
-        </Typography>
-        <Typography variant="h2" textAlign={"center"}>
-          Portfolio version 2
-        </Typography>
-        <AboutMe />
-        <Skills />
-        <Projects />
-        <Education />
-        <Goals />
-        <Contact />
-      </Container>
-    </ThemeProvider>
+    <Container>
+      <ResponsiveAppBar />
+      <Typography fontFamily={"Poppins"} variant="h1" textAlign={"center"}>
+        Coming Soon!
+      </Typography>
+      <Typography variant="h2" textAlign={"center"}>
+        Portfolio version 2
+      </Typography>
+      <AboutMe />
+      <Skills />
+      <Projects />
+      <Education />
+      <Goals />
+      <Contact />
+    </Container>
   );
 }
