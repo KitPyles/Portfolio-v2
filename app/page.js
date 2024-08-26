@@ -1,5 +1,5 @@
 // import Image from "next/image";
-
+"use client"
 import {
   Container,
   createTheme,
@@ -12,6 +12,7 @@ import Projects from "./components/Kit-Pyles-projects";
 import Education from "./components/Kit-Pyles-education";
 import Goals from "./components/Kit-Pyles-goals";
 import Contact from "./components/Kit-Pyles-contact";
+import ResponsiveAppBar from "./components/menu";
 
 // TODO: Plan & build page.
 // TODO: About Me comp
@@ -76,6 +77,7 @@ export default function Home() {
   return (
     <ThemeProvider theme = {theme}>
       <Container>
+        <ResponsiveAppBar />
         <Typography fontFamily={"Poppins"} variant="h1" textAlign={"center"}>
           Coming Soon!
         </Typography>
