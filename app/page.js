@@ -2,8 +2,6 @@
 
 import {
   Container,
-  createTheme,
-  ThemeProvider,
   Typography,
 } from "@mui/material";
 import AboutMe from "./components/Kit-Pyles-about-me";
@@ -74,7 +72,6 @@ export default function Home() {
   };
 
   return (
-    <ThemeProvider theme = {theme}>
       <Container>
         <Typography fontFamily={"Poppins"} variant="h1" textAlign={"center"}>
           Coming Soon!
@@ -89,6 +86,5 @@ export default function Home() {
         <Goals />
         <Contact />
       </Container>
-    </ThemeProvider>
   );
 }
