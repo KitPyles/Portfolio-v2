@@ -6,7 +6,7 @@ const { Container, Typography } = require("@mui/material");
 export default function Contact() {
   return (
     <Container>
-      <Typography>CONTACT COMPONENT</Typography>
+      <Typography variant="h2" textAlign={"right"}>CONTACT COMPONENT</Typography>
     </Container>
   );
 }

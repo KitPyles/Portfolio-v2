@@ -6,7 +6,7 @@ const { Container, Typography } = require("@mui/material");
 export default function Skills(){
     return(
         <Container>
-            <Typography>SKILLS COMPONENT</Typography>
+            <Typography variant="h2" textAlign={"right"}>SKILLS COMPONENT</Typography>
         </Container>
     )
 }
