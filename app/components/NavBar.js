@@ -7,6 +7,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
+import SchoolIcon from '@mui/icons-material/School';
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
@@ -182,14 +183,14 @@ function ResponsiveAppBar(props) {
                         label={
                           <p>
                             <Link
-                              href="/blogs"
+                              href="/education"
                               style={{
                                 textDecoration: "none",
                                 color: "white",
                               }}
                             >
                               {" "}
-                              <AddReactionIcon /> Blogs
+                              <SchoolIcon /> Education
                             </Link>
                           </p>
                         }
@@ -346,6 +347,7 @@ function ResponsiveAppBar(props) {
           </Container>
         </AppBar>
       </HideOnScroll>
+      <Toolbar />
     </React.Fragment>
   );
 }

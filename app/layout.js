@@ -2,6 +2,7 @@ import "./globals.css";
 import { ThemeProvider } from "@mui/material";
 import theme from "./theme";
 import { Poppins } from 'next/font/google';
+import ResponsiveAppBar from "./components/NavBar";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -28,7 +29,10 @@ export default function RootLayout({ children }) {
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-FNHYCV0JT6"
         ></script>
-        <body>{children}</body>
+        <body>
+          <div><ResponsiveAppBar /></div>
+          <div>{children}</div>
+        </body>
       </html>
     </ThemeProvider>
   );
