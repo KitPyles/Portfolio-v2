@@ -1,6 +1,6 @@
 import "./globals.css";
 import { ThemeProvider } from "@mui/material";
-import theme from "./components/theme";
+import theme from "./theme";
 import { Poppins } from 'next/font/google';
 
 const poppins = Poppins({

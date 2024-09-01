@@ -10,7 +10,7 @@ import Projects from "./components/Kit-Pyles-projects";
 import Education from "./components/Kit-Pyles-education";
 import Goals from "./components/Kit-Pyles-goals";
 import Contact from "./components/Kit-Pyles-contact";
-import ResponsiveAppBar from "./components/menu";
+import ResponsiveAppBar from "./components/NavBar";
 
 // TODO: Plan & build page.
 // TODO: About Me comp
