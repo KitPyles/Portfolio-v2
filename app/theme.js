@@ -11,7 +11,19 @@ const poppins = Poppins({
 
 const theme = createTheme({
     typography: {
-        fontFamily: poppins.style.fontFamily,
+        fontFamily: poppins.style.fontFamily
+    },
+    palette: {
+        primary: {
+            main: "rgba(117, 38, 126, 0.647)"
+        },
+        secondary: {
+            main: "rgba(21, 112, 122, 1)"
+        },
+        text: {
+            primary: "#fff",
+            secondary: "#FFE085"
+        }
     }
 });
 

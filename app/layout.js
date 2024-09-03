@@ -1,8 +1,9 @@
 import "./globals.css";
-import { ThemeProvider } from "@mui/material";
-import theme from "./theme";
 import { Poppins } from 'next/font/google';
 import ResponsiveAppBar from "./components/NavBar";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
+import { Box, CssBaseline, ThemeProvider } from "@mui/material";
+import theme from "./theme";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -22,18 +23,27 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ThemeProvider theme={theme}>
-      <html lang="en">
+    <html lang="en">
         <head></head>
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-FNHYCV0JT6"
         ></script>
         <body>
-          <div><ResponsiveAppBar /></div>
-          <div>{children}</div>
+          <AppRouterCacheProvider>
+            <ThemeProvider theme={theme}>
+            <CssBaseline />
+            <Box
+              height={"100vh"}
+              width={"100vw"}
+              sx={{ background: "linear-gradient( 90deg, rgba(117, 38, 126, 0.647) 0%, rgba(21, 112, 122, 1) 100% )" }}
+            >
+            <ResponsiveAppBar />
+            {children}
+            </Box>
+            </ThemeProvider>
+          </AppRouterCacheProvider>
         </body>
       </html>
-    </ThemeProvider>
   );
 }

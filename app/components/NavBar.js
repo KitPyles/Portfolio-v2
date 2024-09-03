@@ -71,7 +71,7 @@ function ResponsiveAppBar(props) {
             border: "2px solid white",
             borderRadius: "30px",
             background:
-              "linear-gradient( 90deg, rgba(117, 38, 126, 0.647) 0%, rgba(24, 128, 140, 0.696) 100% )",
+              "linear-gradient( 90deg, rgba(117, 38, 126, 0.647) 0%, rgba(21, 112, 122, 1) 100% )",
           }}
         >
           <Container maxWidth="xl">

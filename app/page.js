@@ -1,10 +1,13 @@
-// import Image from "next/image";
 "use client";
+
 import {
+  Box,
   Container,
+  CssBaseline,
+  ThemeProvider,
   Typography,
 } from "@mui/material";
-// import ResponsiveAppBar from "./components/NavBar";
+import theme from "./theme";
 
 // TODO: Plan & build page.
 // TODO: About Me comp
@@ -17,11 +20,14 @@ import {
 export default function Home() {
   return (
     <Container>
-      {/* <ResponsiveAppBar /> */}
-      <Typography fontFamily={"Poppins"} variant="h1" textAlign={"center"}>
+      <Typography variant="h1" textAlign={"center"}>
         Coming Soon!
       </Typography>
-      <Typography variant="h2" textAlign={"center"}>
+      <Typography
+        variant="h2"
+        textAlign={"center"}
+        color={theme.palette.text.secondary}
+      >
         Portfolio version 2
       </Typography>
     </Container>
