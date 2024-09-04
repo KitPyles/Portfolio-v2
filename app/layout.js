@@ -34,9 +34,8 @@ export default function RootLayout({ children }) {
             <ThemeProvider theme={theme}>
             <CssBaseline />
             <Box
-              height={"100vh"}
               width={"100vw"}
-              sx={{ background: "linear-gradient( 90deg, rgba(117, 38, 126, 0.647) 0%, rgba(21, 112, 122, 1) 100% )" }}
+              sx={{ background: "linear-gradient( 90deg, rgba(117, 38, 126, 0.647) 0%, rgba(21, 112, 122, 1) 100% )", minHeight: "100vh" }}
             >
             <ResponsiveAppBar />
             {children}
