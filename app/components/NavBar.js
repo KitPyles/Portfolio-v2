@@ -7,6 +7,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
+import SchoolIcon from '@mui/icons-material/School';
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
@@ -70,7 +71,7 @@ function ResponsiveAppBar(props) {
             border: "2px solid white",
             borderRadius: "30px",
             background:
-              "linear-gradient( 90deg, rgba(117, 38, 126, 0.647) 0%, rgba(24, 128, 140, 0.696) 100% )",
+              "linear-gradient( 90deg, rgba(117, 38, 126, 0.647) 0%, rgba(21, 112, 122, 1) 100% )",
           }}
         >
           <Container maxWidth="xl">
@@ -182,14 +183,14 @@ function ResponsiveAppBar(props) {
                         label={
                           <p>
                             <Link
-                              href="/blogs"
+                              href="/education"
                               style={{
                                 textDecoration: "none",
                                 color: "white",
                               }}
                             >
                               {" "}
-                              <AddReactionIcon /> Blogs
+                              <SchoolIcon /> Education
                             </Link>
                           </p>
                         }
@@ -346,6 +347,7 @@ function ResponsiveAppBar(props) {
           </Container>
         </AppBar>
       </HideOnScroll>
+      <Toolbar />
     </React.Fragment>
   );
 }
