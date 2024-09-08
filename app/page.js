@@ -11,12 +11,6 @@ import theme from "./theme";
 import Typewriter from 'typewriter-effect'
 
 // TODO: Plan & build page.
-// TODO: About Me comp
-// TODO: Skills comp
-// TODO: Projects comp
-// TODO: Education comp
-// TODO: Goals comp
-// TODO: Contact comp
 
 export default function Home() {
   return (
@@ -31,7 +25,7 @@ export default function Home() {
       >
         Portfolio version 2
       </Typography>
-      <Typography>Does TypewriterJS work? I am </Typography>
+      
     </Container>
   );
 }
