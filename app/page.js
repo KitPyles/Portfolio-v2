@@ -49,12 +49,16 @@ export default function Home() {
                 "a crafter.",
                 "a Renaissance Faire vendor.",
                 "always learning.",
-                "an escape room escapee."
+                "an escape room escapee.",
+                "a work in progress."
               ],
               autoStart: true,
               loop: true,
             }}
           />
+        </Typography>
+        <Typography>
+          <i>Portfolio 2.0 is still under development.</i>
         </Typography>
       </Box>
       <Container
@@ -65,14 +69,14 @@ export default function Home() {
         }}
       >
         <Typography sx={{ marginBottom: 2 }}>
-          <strong>Welcome!</strong><br/><br/>
+          <strong>Welcome!</strong><br/>
           I'm Kit, a software engineer who loves turning complex problems into clean, functional solutions. Whether it's building applications, optimizing user experiences, or advocating for accessibility, I'm always learning and pushing the boundaries of what's possible. Take a look around to see my projects, learn more about my skills, and let's connect!
         </Typography>
         <Typography>
-          <strong>What I Do</strong><br/><br/>
+          <strong>What I Do</strong><br/>
           I specialize in creating web applications that are both functional & accessible. From front-end development to back-end integration, I aim to deliver seamless digital experiences. My skills include:
         </Typography>
-        <List sx={{ listStyleType: "disc", paddingLeft: 2 }}>
+        <List sx={{ listStyleType: "disc", paddingLeft: 2, marginBottom: 2 }}>
           <ListItem sx={{ display: "list-item" }}>
             Full-stack development with JavaScript, TypeScript, & Java
           </ListItem>
@@ -86,6 +90,10 @@ export default function Home() {
             Front-end development using NextJS, React, & Material UI
           </ListItem>
         </List>
+        <Typography>
+          <strong>Featured Projects</strong><br/>
+          <i>Project card component for Portfolio</i>
+        </Typography>
       </Container>
     </Container>
   );
