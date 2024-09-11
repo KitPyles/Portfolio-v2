@@ -52,9 +52,11 @@ export default function Home() {
           />
         </Typography>
       </Box>
-      <Typography>
-        <i>Portfolio 2.0 is still under development.</i>
-      </Typography>
+      <Container>
+        <Typography>
+          <i>Portfolio 2.0 is still under development.</i>
+        </Typography>
+      </Container>
       <Container
         sx={{
           border: "2px solid white",
