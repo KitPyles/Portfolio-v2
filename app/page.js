@@ -27,14 +27,8 @@ export default function Home() {
       >
         Part code whisperer, part puzzle solver, always caffeinated
       </Typography>
-      <Box
-        display={"flex"}
-        flexDirection={"row"}
-        justifyContent={"center"}
-      >
-        <Typography variant="h5">
-          I am&nbsp;
-        </Typography>
+      <Box display={"flex"} flexDirection={"row"} justifyContent={"center"}>
+        <Typography variant="h5">I am&nbsp;</Typography>
         <Typography variant="h5" sx={{ color: theme.palette.text.secondary }}>
           <Typewriter
             options={{
@@ -50,31 +44,40 @@ export default function Home() {
                 "a Renaissance Faire vendor.",
                 "always learning.",
                 "an escape room escapee.",
-                "a work in progress."
+                "a work in progress.",
               ],
               autoStart: true,
               loop: true,
             }}
           />
         </Typography>
-        <Typography>
-          <i>Portfolio 2.0 is still under development.</i>
-        </Typography>
       </Box>
+      <Typography>
+        <i>Portfolio 2.0 is still under development.</i>
+      </Typography>
       <Container
         sx={{
           border: "2px solid white",
           borderRadius: "30px",
-          width:"93.5%"
+          width: "93.5%",
         }}
       >
         <Typography sx={{ marginBottom: 2 }}>
-          <strong>Welcome!</strong><br/>
-          I'm Kit, a software engineer who loves turning complex problems into clean, functional solutions. Whether it's building applications, optimizing user experiences, or advocating for accessibility, I'm always learning and pushing the boundaries of what's possible. Take a look around to see my projects, learn more about my skills, and let's connect!
+          <strong>Welcome!</strong>
+          <br />
+          I'm Kit, a software engineer who loves turning complex problems into
+          clean, functional solutions. Whether it's building applications,
+          optimizing user experiences, or advocating for accessibility, I'm
+          always learning and pushing the boundaries of what's possible. Take a
+          look around to see my projects, learn more about my skills, and let's
+          connect!
         </Typography>
         <Typography>
-          <strong>What I Do</strong><br/>
-          I specialize in creating web applications that are both functional & accessible. From front-end development to back-end integration, I aim to deliver seamless digital experiences. My skills include:
+          <strong>What I Do</strong>
+          <br />I specialize in creating web applications that are both
+          functional & accessible. From front-end development to back-end
+          integration, I aim to deliver seamless digital experiences. My skills
+          include:
         </Typography>
         <List sx={{ listStyleType: "disc", paddingLeft: 2, marginBottom: 2 }}>
           <ListItem sx={{ display: "list-item" }}>
@@ -91,7 +94,8 @@ export default function Home() {
           </ListItem>
         </List>
         <Typography>
-          <strong>Featured Projects</strong><br/>
+          <strong>Featured Projects</strong>
+          <br />
           <i>Project card component for Portfolio</i>
         </Typography>
       </Container>
