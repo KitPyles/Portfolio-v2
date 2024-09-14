@@ -54,9 +54,11 @@ export default function Home() {
           />
         </Typography>
       </Box>
-      <Typography>
-        <i>Portfolio 2.0 is still under development.</i>
-      </Typography>
+      <Container>
+        <Typography sx={{ textAlign: "center" }}>
+          <i>Portfolio 2.0 is still under development.</i>
+        </Typography>
+      </Container>
       <Container
         sx={{
           border: "2px solid white",
