@@ -11,6 +11,8 @@ import {
 } from "@mui/material";
 import theme from "./theme";
 import Typewriter from "typewriter-effect";
+import { featuredProjects } from "./projects/projects";
+import ProjectCard from "./components/ProjectCard";
 
 // TODO: Plan & build page.
 
@@ -98,7 +100,11 @@ export default function Home() {
         <Typography>
           <strong>Featured Projects</strong>
           <br />
-          <i>Project card component for Portfolio</i>
+          <Container display={"flex"} flexDirection={"row"} justifyContent={"left"}>
+            {featuredProjects.map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          </Container>
         </Typography>
       </Container>
     </Container>

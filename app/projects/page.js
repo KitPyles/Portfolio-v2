@@ -7,13 +7,27 @@
 // TODO: JS Arcade v.1 (to be updated ASAP)
 // TODO: Health eHub
 
-import { Container, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
+import { allProjects } from "./projects";
+import { featuredProjects } from "./projects";
+import ProjectCard from "../components/ProjectCard";
 
 export default function Projects() {
     return(
         <Container>
-            <Typography variant="h1">Contact Page</Typography>
+            <Typography variant="h1">Projects Page</Typography>
             <Typography>work in progress</Typography>
+            <Box
+                display={"flex"}
+                flexDirection={"row"}
+            >
+                {allProjects.map((project) =>
+                    <ProjectCard
+                        key={project.id}
+                        project={project}
+                    />
+                )}
+            </Box>
         </Container>
     )
 }
