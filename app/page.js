@@ -29,9 +29,9 @@ export default function Home() {
       >
         Part code whisperer, part puzzle solver, always caffeinated
       </Typography>
-      <Box display={"flex"} flexDirection={"row"} justifyContent={"center"}>
+      <Box display={"flex"} flexDirection={"row"} justifyContent={"center"} alignItems={"center"}>
         <Typography variant="h5">I am&nbsp;</Typography>
-        <Typography variant="h5" sx={{ color: theme.palette.text.secondary }}>
+        <span style={{ fontSize: "25px", color: theme.palette.text.secondary }}>
           <Typewriter
             options={{
               strings: [
@@ -52,7 +52,7 @@ export default function Home() {
               loop: true,
             }}
           />
-        </Typography>
+        </span>
       </Box>
       <Container>
         <Typography sx={{ textAlign: "center" }}>
@@ -64,6 +64,7 @@ export default function Home() {
           border: "2px solid white",
           borderRadius: "30px",
           width: "93.5%",
+          marginTop: 1
         }}
       >
         <Typography sx={{ marginBottom: 2 }}>
