@@ -10,9 +10,9 @@ import {
   Typography,
 } from "@mui/material";
 import theme from "./theme";
-import Typewriter from "typewriter-effect";
 import { featuredProjects } from "./projects/projects";
 import ProjectCard from "./components/ProjectCard";
+import TypewriterEffect from "./components/TypewriterEffect";
 
 // TODO: Plan & build page.
 
@@ -29,30 +29,17 @@ export default function Home() {
       >
         Part code whisperer, part puzzle solver, always caffeinated
       </Typography>
-      <Box display={"flex"} flexDirection={"row"} justifyContent={"center"}>
-        <Typography variant="h5">I am&nbsp;</Typography>
-        <Typography variant="h5" sx={{ color: theme.palette.text.secondary }}>
-          <Typewriter
-            options={{
-              strings: [
-                "a gamer.",
-                "a reader.",
-                "a tester.",
-                "an accessibility tester.",
-                "an accessibility advocate.",
-                "a software engineer",
-                "a web developer.",
-                "a crafter.",
-                "a Renaissance Faire vendor.",
-                "always learning.",
-                "an escape room escapee.",
-                "a work in progress.",
-              ],
-              autoStart: true,
-              loop: true,
-            }}
-          />
+      <Box
+        display={"flex"}
+        flexDirection={"row"}
+        justifyContent={"center"}
+        alignItems={"center"}
+        sx={{ fontSize: "25px", color: theme.palette.text.secondary }}
+      >
+        <Typography variant="" sx={{ color: theme.palette.text.primary }}>
+          I am&nbsp;
         </Typography>
+        <TypewriterEffect />
       </Box>
       <Container>
         <Typography sx={{ textAlign: "center" }}>
@@ -64,6 +51,7 @@ export default function Home() {
           border: "2px solid white",
           borderRadius: "30px",
           width: "93.5%",
+          marginTop: 1,
         }}
       >
         <Typography sx={{ marginBottom: 2 }}>
@@ -97,15 +85,21 @@ export default function Home() {
             Front-end development using NextJS, React, & Material UI
           </ListItem>
         </List>
-        <Typography>
-          <strong>Featured Projects</strong>
-          <br />
-          <Container display={"flex"} flexDirection={"row"} justifyContent={"left"}>
+        <Container>
+          <Typography>
+            <strong>Featured Projects</strong>
+            <br />
+          </Typography>
+          <Container
+            display={"flex"}
+            flexDirection={"row"}
+            justifyContent={"left"}
+          >
             {featuredProjects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
           </Container>
-        </Typography>
+        </Container>
       </Container>
     </Container>
   );
