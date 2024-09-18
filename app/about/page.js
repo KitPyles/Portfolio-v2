@@ -15,7 +15,7 @@ export default function About() {
         border: "2px solid white",
         borderRadius: "30px",
         width: "93.5%",
-        marginTop: 1
+        marginTop: 1,
       }}
     >
       <Typography>
@@ -23,29 +23,30 @@ export default function About() {
         unique perspective to software engineering, combining creativity with
         analytical problem-solving. My journey into tech may not be
         conventional, but it’s driven by a passion for learning & making
-        technology more inclusive.
+        technology more inclusive.<br/><br/>
       </Typography>
       <Typography>
-        I’m an active member of the Kansas City Women in Tech community, where I
+        I’m an active member of Kansas City Women in Technology (KCWIT), where I
         help coordinate DjangoFest KC alongside an amazing committee of
         volunteers. DjangoFest KC is an event dedicated to introducing
         developers to the world of Python & Django. Whether you're completely
-        new to coding or have experience in other frameworks, DjangoFest
+        new to coding or have experience in other frameworks, DjangoFest KC
         provides an opportunity to dive into Python’s powerful ecosystem while
         learning the fundamentals of web development through Django. It’s a
         space for collaboration, hands-on learning, & expanding your skillset in
-        a supportive environment.
+        a supportive environment.<br/><br/>
       </Typography>
       <Typography>
         When I’m not knee-deep in code, you can find me indulging my love for
         creative outlets & strategic challenges. I help my husband in his
         handmade leather goods business, assisting both in crafting products &
-        selling them at Renaissance Faires. These events combine our passion for
-        history, craftsmanship, & community, offering a unique experience that
-        we look forward to every season. I’m also an avid gamer, playing
-        everything from narrative-driven RPGs on my PC to competitive games on
-        my PlayStation 4, & I love testing my problem-solving skills in escape
-        rooms—always on the lookout for the next challenge to solve!
+        selling them at events, like conventions & Renaissance Festivals.
+        These events combine our passion for history, craftsmanship, &
+        community, offering a unique experience that we look forward to every
+        season. I’m also an avid gamer, playing everything from narrative-driven
+        RPGs to competitive games on my PC & my PlayStation 4, & I love testing
+        my problem-solving skills in escape rooms—always on the lookout for the
+        next challenge to solve!<br/><br/>
       </Typography>
       <Typography>
         Accessibility is a core focus of my work, & I’m passionate about
