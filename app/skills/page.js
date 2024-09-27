@@ -8,10 +8,10 @@ import SkillCard from "../components/SkillCard";
 
 export default function Skills() {
   return (
-    <Container>
-      <Typography variant="h1">Skills</Typography>
+    <Container sx={{ marginTop: 1 }}>
+      {/* <Typography variant="h1">Skills</Typography>
       <Typography>work in progress</Typography>
-      <hr />
+      <hr /> */}
       <Container>
         <Typography variant="h4">
           <strong>Front-End Skills:</strong>
