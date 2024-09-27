@@ -9,11 +9,11 @@ import SkillCard from "../components/SkillCard";
 export default function Skills() {
   return (
     <Container>
-      <Typography variant="h1">Contact Page</Typography>
+      <Typography variant="h1">Skills</Typography>
       <Typography>work in progress</Typography>
       <hr />
       <Container>
-        <Typography>
+        <Typography variant="h4">
           <strong>Front-End Skills:</strong>
         </Typography>
         <Box display={"flex"} flexWrap={"wrap"}>
@@ -23,7 +23,7 @@ export default function Skills() {
         </Box>
       </Container>
       <Container>
-        <Typography>
+        <Typography variant="h4">
           <strong>Back-End Skills:</strong>
         </Typography>
         <Box display={"flex"} flexWrap={"wrap"}>
@@ -33,7 +33,7 @@ export default function Skills() {
         </Box>
       </Container>
       <Container>
-        <Typography>
+        <Typography variant="h4">
           <strong>Technical Tools:</strong>
         </Typography>
         <Box display={"flex"} flexWrap={"wrap"}>
@@ -43,7 +43,7 @@ export default function Skills() {
         </Box>
       </Container>
       <Container>
-        <Typography>
+        <Typography variant="h4">
           <strong>Testing/QA Skills:</strong>
         </Typography>
         <Box display={"flex"} flexWrap={"wrap"}>
@@ -53,7 +53,7 @@ export default function Skills() {
         </Box>
       </Container>
       <Container>
-        <Typography>
+        <Typography variant="h4">
           <strong>Methodologies & Miscellaneous Skills:</strong>
         </Typography>
         <Box display={"flex"} flexWrap={"wrap"}>
