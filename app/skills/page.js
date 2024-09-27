@@ -8,7 +8,15 @@ import SkillCard from "../components/SkillCard";
 
 export default function Skills() {
   return (
-    <Container sx={{ marginTop: 1 }}>
+    <Container
+      sx={{
+        marginTop: 1,
+        border: "2px solid white",
+        borderRadius: "30px",
+        width: "93.5%",
+        marginTop: 1,
+      }}
+    >
       {/* <Typography variant="h1">Skills</Typography>
       <Typography>work in progress</Typography>
       <hr /> */}
