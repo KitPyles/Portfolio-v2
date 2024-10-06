@@ -15,7 +15,6 @@ export default function SkillCard({ skill }) {
     return (
         <Box
             display={"flex"}
-            flexDirection={"row"}
             flexWrap={"wrap"}
         >
             <Card
