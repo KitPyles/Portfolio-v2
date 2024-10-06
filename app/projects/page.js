@@ -25,12 +25,7 @@ export default function Projects() {
     >
             {/* <Typography variant="h1">Projects Page</Typography>
             <Typography>work in progress</Typography> */}
-            <Box
-                marginTop={1}
-                marginBottom={1}
-                display={"flex"}
-                flexDirection={"row"}
-            >
+            <Box display={"flex"} flexWrap={"wrap"} justifyContent={"space-between"}>
                 {allProjects.map((project) =>
                     <ProjectCard
                         key={project.id}
