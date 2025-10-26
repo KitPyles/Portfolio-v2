@@ -6,7 +6,7 @@ let portfolio2 = {
     description: "This multi-page personal portfolio website showcases my skills, experience, and projects as a software engineer & web developer. It features a clean, responsive design and intuitive navigation to give visitors a clear sense of my capabilities.",
     role: "Designer, Tester, Front-End Developer, Back-End Developer",
     tech: "Next.js, Node.js, Typewriter.js, Material UI",
-    url: "kitpyles.up.railway.app"
+    url: "https://kitpyles.up.railway.app"
 };
 let portfolio = {
     id: "portfolio",
@@ -14,7 +14,7 @@ let portfolio = {
     description: "Built a single-page application using a free HTML template from HTML5Up. Customized the design by adjusting colors, font face, & content to reflect my personal brand.",
     role: "Full-Stack Developer, Tester",
     tech: "HTML, CSS, Node.js",
-    url: "kp-portfolio-deprecated.up.railway.app"
+    url: "https://kp-portfolio-deprecated.up.railway.app"
 };
 let chatbot = {
     id: "chatbot",
@@ -22,7 +22,7 @@ let chatbot = {
     description: "A general AI chatbot built with Google GenerativeAI (Gemini) on the backend.",
     role: "Full-Stack Developer, Tester",
     tech: "Next.js, Node.js, Material UI, Google GenerativeAI API integration",
-    url: "k-c-chatbot.up.railway.app"
+    url: "https://k-c-chatbot.up.railway.app/"
 };
 let arcade = {
     id: "arcade",
@@ -30,7 +30,7 @@ let arcade = {
     description: "Focused on function over form, this WIP features 7 classic games.",
     role: "Full-Stack Developer, Tester",
     tech: "Node.js, HTML, CSS",
-    url: "kp-arcade.up.railway.app"
+    url: "https://kp-arcade.up.railway.app"
 }
 let healthehub = {
     id: "health-ehub",
